@@ -1,7 +1,9 @@
+export type ID = string | number;
+export type Title = string;
+export type Completed = boolean;
+
 export interface TodoEntity {
-  id: string;
-  title: string;
-  completed: boolean;
-  createdAt?: Date;
-  updatedAt?: Date;
+  id: ID;
+  title: Title;
+  completed: Completed;
 }

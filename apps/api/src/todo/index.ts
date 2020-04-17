@@ -1,14 +1,14 @@
 import { Router, Request } from "express";
 import { TodoController } from "./controller";
 import { TodoEntity } from "domain-todo/entities";
-import { DbKeys } from "domain-todo/utils";
 
 let route = Router();
 
 let todoController = new TodoController();
 
 type TodoItemParams = { todoId: string };
-type T = Omit<TodoEntity, DbKeys>;
+
+type DbKeys = "id" | "createdAt" | "updatedAt";
 
 route.get("/", async (_, res) => {
   try {
