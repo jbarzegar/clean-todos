@@ -39,7 +39,6 @@ let create: TodoRepository["create"] = async (body) => {
 };
 
 let update: TodoRepository["update"] = async (id, body) => {
-  debugger;
   let resp = await fetch(`${TODO_URL}/${id}`, {
     method: "PATCH",
     headers: { "Content-Type": "application/json" },
