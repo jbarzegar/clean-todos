@@ -1,0 +1,19 @@
+{
+  "name": "infra-todo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@types/lowdb": "^1.0.9",
+    "@types/uuid": "^7.0.2",
+    "domain-todo": "1.0.0",
+    "lowdb": "^1.0.0",
+    "typescript": "^3.8.3",
+    "uuid": "^7.0.3"
+  }
+}

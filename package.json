@@ -8,5 +8,8 @@
     "apps/*",
     "domains/*",
     "packages/*"
-  ]
+  ],
+  "scripts": {
+    "bootstrap": "scripts/bootstrap.sh"
+  }
 }

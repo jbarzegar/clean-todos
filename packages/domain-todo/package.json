@@ -1,0 +1,13 @@
+{
+  "name": "domain-todo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "index.ts",
+  "private": true,
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "typescript": "^3.8.3"
+  }
+}

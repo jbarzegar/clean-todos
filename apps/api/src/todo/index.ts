@@ -1,10 +1,8 @@
 import { Router, Request } from "express";
-import { TodoController } from "./controller";
 import { TodoEntity } from "domain-todo/entities";
+import * as todoController from "./controller";
 
 let route = Router();
-
-let todoController = new TodoController();
 
 type TodoItemParams = { todoId: string };
 

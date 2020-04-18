@@ -1,5 +1,4 @@
-import { TodoEntity } from "./entities";
-// import { DbKeys } from "./utils";
+import { TodoEntity, ID } from "./entities";
 
 export interface TodoRepository {
   getAll: () => Promise<TodoEntity[]>;
@@ -7,7 +6,7 @@ export interface TodoRepository {
   /**
    * @returns uuid of the item
    */
-  create: (todo: Omit<TodoEntity, "id" | "completed">) => Promise<string>;
+  create: (todo: Pick<TodoEntity, "title">) => Promise<ID>;
   update: (
     id: TodoEntity["id"],
     updateData: Partial<Omit<TodoEntity, "id">>
